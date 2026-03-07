@@ -46,7 +46,10 @@ document.getElementById("cake").style.display="block"
 
 /* PLAY MUSIC */
 
-document.getElementById("music").play()
+const music = document.getElementById("music")
+
+music.currentTime = 0
+music.play().catch(()=>{})
 
 /* BALLOONS */
 
@@ -188,5 +191,6 @@ p.remove()
 },20)
 
 }
+
 
 }
